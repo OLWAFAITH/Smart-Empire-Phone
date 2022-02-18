@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Empire  IPHONE</title>
+    <link rel="stylesheet" href="locophone.css">
+</head>
+<body><div id="all">
+	<div id="navbar">
+		<span id="companyname"><b>Smart</b> Empire Voucher</span>
+		
+		<button id="alertbtn" onmousemove="alertbtn()">&hearts;</button>
+		<button onmousemove="ccbtn()">&#9824;</button>
+		<button onmousemove="addcashbtn()">&#9827;</button>
+	</div>
+		<!-- notification div -->
+	<div id="alertboard">
+		
+	</div>
+
+	<!-- display -->
+	<div id="displayscreen" onmousemove="changeview()" onclick="changevieww()">
+		<p>No 	OF Card Recharged<br><br>
+			<input id="totalbal" type="number" value="10000" disabled=""></p>
+		<center>
+		<label>CHOOSE DESIRED PROVIDER:</label>
+		<select id="provider">
+			<option>AIRTEL</option>
+			<option>GLO</option>
+			<option>Smart Data</option>
+			<option>MTN</option>
+			<option>9MOBILE</option>
+		</select><br><br><br>
+		<label>CHOOSE AMOUNT TYPE:</label>
+		<select id="amount">
+			<option>#100</option>
+			<option>#200</option>
+			<option>#500</option>
+			<option>#1000</option>
+		</select><br><br><br>
+		</center>
+
+		<button onclick="transactionbtn()" id="transactionbtn">TRANSACTIONS</button>
+		<button onclick="generatorbtn()" id="generatorbtn">GENERATE VOUCHER</button>
+
+	</div>
+
+	<!-- TRANSACTION BOARD -->
+	<div id="transactionboard">
+
+	</div>
+
+	<!-- VOUCHERSCREEN -->
+	<div id="voucherboard">
+		
+	</div>
+	<div id="ccboard">
+		<div id="ccboardscreen"></div>
+		<input type="text" id="message" placeholder="Write a message"><button id="send" onclick="send()">SEND</button>
+	</div>
+	<center>
+		<div id="alertbox">
+			<h3><b>TRANSACTION DECLINED<br> INSUFFICENT BALANCE...</b></h3>
+		</div>	
+	</center>
+</div>
+<div id="all2">
+    <div id="phone">
+        <h1 id="mtn">MTN NG STAYSAFE</h1>
+        <div id="simcard">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="card">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="head">
+            <p></p>
+            <div id="camera">
+                <div id="innercamera"></div>
+            </div>
+            <div id="flash">
+                <p></p>
+            </div>
+            <div id="speaker">
+                <p> </p>
+            </div>
+        </div>
+      
+       
+        <div id="ear" style="margin-left: 30px;font-size: 50px;margin-top: 50px;color: white;"></div>
+        <div id="notification">
+            <h3 id="notify">Notification</h3>
+         <H3 id="there">HELLO THERE MY NAME IS JEXI WELCOME</H3>
+         
+        </div>
+        <div id="notification2">
+            <h3 id="message">Message From JEXI</h3>
+            <h3 id="help">HOW MAY I HELP YOU TODAY</h3>
+        </div>
+        <div>
+            <img onclick="home()" id="home" src="images/home.png" alt="">
+        </div>
+    </div>
+    <div id="tac1">
+        <div id="toe">
+            <p></p>
+        </div>
+        <div id="camera4">
+            <p></p>
+        </div>
+        <div id="simcard4">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        
+        <div id="card4">
+             <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="speaker4">
+            <p></p>
+        </div>
+
+        <div id="flash4">
+            <p></p>
+        </div>
+
+        <div id="innercamera4">
+            <p></p>
+        </div>
+        <div>
+            <marquee direction='left' style="color:white; font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+        </div>
+        <div id="information">
+            <h1 id="nameing">TIC-TAC-TOE</h1> <br>
+    
+            <h3 id="SMART">SMART EMPIRE GAMES</h3> 
+    
+            <input type="name" id="playerone" placeholder="Player (One)"> <input id="playertwo" type="text" placeholder="Player (Two)"> 
+    
+            <button onclick="You()" id="begingame">begin-game</button>
+                    
+            <video controls src="video/How to play Tic Tac Toe.mp4" autopla loop id="tutorial"></video>
+           
+    
+    
+            <button id="poweron" onclick="son()">Power On</button>
+            <button id="poweroff" onclick="sof()">Power OFF</button>
+            
+            <h4 id="empire">Smart Empires Games &copy; &reg;  </h4>    
+        </div>
+        <div id="playground">
+            <div id="gun"></div>
+            <div class="winn"></div>
+                <div class="names-holder">
+                    <div id="res"></div>
+                    <div id="good"></div>
+                    <div id="showing"></div> <br>
+                    <div id="showing2"></div>
+                </div>
+                <table id="body">
+                    <tr border:2px>
+                        <td><button id="one" onclick="show(event)"></button></td>
+                        <td><button id="two" onclick="show(event)"></button></td>
+                        <td><button id="three" onclick="show(event)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="four" onclick="show(event)"></button></td>
+                        <td><button id="five" onclick="show(event)"></button></td>
+                        <td><button id="six" onclick="show(event)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="seven" onclick="show(event)"></button></td>
+                        <td><button id="eight" onclick="show(event)"></button></td>
+                        <td><button id="nine" onclick="show(event)"></button></td>
+                    </tr>
+                </table>
+    
+                <div id="scoreboard">0</div>
+                <div id="scoreboard2">0</div>
+             <button id="replay" onclick="Continue()">Continue</button>
+             <button id="end" onclick="Session()">END SESSION</button>
+    
+                
+               
+        </div>
+            <audio controls id="coded" src="audio/Twenty One Pilots - Car Radio.mp3" loop ></audio>
+            <audio controls id="nice" src="audio/Twenty One Pilots - Car Radio.mp3" loop ></audio>
+</div>
+
+
+    <div id="background">
+        <div id="top">
+            <p></p>
+        </div>
+        <div id="camera2">
+            <p></p>
+        </div>
+        <div id="simcard2">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        
+        <div id="card2">
+             <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="speaker2">
+            <p></p>
+        </div>
+
+        <div id="flash2">
+            <p></p>
+        </div>
+
+        <div id="innercamera2">
+            <p></p>
+        </div>
+        <div>
+            <marquee direction='left' style="color:white; font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+        </div>
+        <div>
+            <img onclick="manager()" id="mana" src="images/filemanager.png" alt="">
+        </div>
+       <div>
+        <img id="tic" onclick="pack()" src="images/x_o-512.png" alt="">
+       </div>
+       <div>
+           <img id="audiomack" onclick="make()" src="images/download__8_-removebg-preview.png" alt="">
+       </div>
+        <div id="innerMain">
+            <div>
+                <img onclick="call()" id="call" src="images/download__7_-removebg-preview.png" alt="">
+            </div>
+            <div>
+                <img  id="google" onclick="goo()" src="images/google.png" alt="">
+            </div>
+            <div>
+                <img  id="gmail" src="images/gmail.png" alt="">
+            </div>
+            <div>
+                <img  id="instargram" src="images/instagram.png" alt="">
+            </div>
+          
+        </div>    
+
+       
+    </div>
+
+    <div id="calling">
+        <div id="upper">
+            <p></p>
+        </div>
+        <div id="camera3">
+            <p></p>
+        </div>
+        <div id="simcard3">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        
+        <div id="card3">
+             <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="speaker3">
+            <p></p>
+        </div>
+
+        <div id="flash3">
+            <p></p>
+        </div>
+
+        <div id="innercamera3">
+            <p></p>
+        </div>
+        <div>
+            <marquee direction='left' style="color:white;
+            
+             font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+        </div>
+        <div id="recharge">
+            <input id="typingnumbers" type="text" style="color: #000;">
+            <button id="clear" onclick="clearNums()">
+                <img id="delete"  src="images/download__7_-removebg-preview (1).png" alt="">
+            </button>
+            
+           
+
+                <div id="move1">
+                    <button id="other" onclick="clearFunc(1)">1abc</button>
+                    <button id="other2" onclick="clearFunc(2)">2def</button>  
+                    <button id="other3" onclick="clearFunc(3)">3ghi</button>
+                </div>
+               <div id="move2">
+                <button id="other4" onclick="clearFunc(4)" >4jkl</button>
+                <button id="other5" onclick="clearFunc(5)">5mno</button>
+                <button id="other6" onclick="clearFunc(6)">6pqr</button>
+               </div>
+               <div id="move3">
+                <button id="other7" onclick="clearFunc(7)">7stu</button>
+                <button id="other8" onclick="clearFunc(8)">8vwx</button>
+                <button id="other9" onclick="clearFunc(9)">9yz</button>
+               </div>
+               <div id="move4">
+                <button id="other10" onclick="clearFunc('*')">*</button>
+                <button id="other11" onclick="clearFunc('0')">0+</button>
+                <button id="other12" onclick="clearFunc('#')">#</button>
+
+            <div  onclick="calls()">
+            <img id="call2" src="images/download__7_-removebg-preview.png" alt="">
+            </div>
+            <div  onclick="done()">
+                <img id="done2" src="images/download__7_-removebg-preview.png" alt="">
+                </div>
+                
+               </div>
+               <div id="line1">
+                <select name="" id="endgame" hidden="true">
+                    <option id="mtn" >MTN</option>
+                    <option id="glo">GLO</option>
+                    <option id="airtel">AIRTEL</option>
+                    <option id="mobile">9MOBILE</option>
+                </select>
+                <div id="line2"></div>
+            </div>
+
+               <div id="ringing">
+                <div id="lower4">
+                    <p></p>
+                </div>
+                <div id="camera6">
+                    <p></p>
+                </div>
+                <div id="simcard6">
+                    <img src="images/SIM Card.png" alt="">
+                </div>
+                
+                <div id="card6">
+                     <img src="images/SIM Card.png" alt="">
+                </div>
+                <div id="speaker6">
+                    <p></p>
+                </div>
+                
+                <div id="flash6">
+                    <p></p>
+                </div>
+        
+                <div id="innercamera6">
+                    <p></p>
+                </div>
+                <div>
+                    <marquee direction='left' style="color:white; font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+               
+                </div>
+
+
+                <div id="showingringing">
+                    <img id="user" src="images/User_100px.png" alt="">
+                    <div id="displaynetwork2"></div>
+                    <div id="displaynetwork"></div>
+                    <img id="sim" src="images/SIM Card.png" alt="" > <p id="niger">Nigeria</p> 
+                    <div id="identifier"></div>
+                    <h1 id="num">081-348-243-62</h1>
+
+                    <img id="pickingup" src="images/download__7_-removebg-preview.png" alt="">
+                    <img id="hangingup" src="images/images-removebg-preview.png" alt="">
+                
+                   
+
+                </div>
+                
+ </div>
+</div>
+</div>
+
+<div id="music">
+    <div id="match">
+        <p></p>
+    </div>
+    <div id="camera5">
+        <p></p>
+    </div>
+    <div id="simcard5">
+        <img src="images/SIM Card.png" alt="">
+    </div>
+    
+    <div id="card5">
+         <img src="images/SIM Card.png" alt="">
+    </div>
+    <div id="speaker5">
+        <p></p>
+    </div>
+
+    <div id="flash5">
+        <p></p>
+    </div>
+
+    <div id="innercamera5">
+        <p></p>
+    </div>
+    <div>
+        <marquee direction='left' style="color:white; font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+    <h1 id="naming">alukofaithtemitope7</h1>
+    <img id="bellicon" src="images/download (9).png" alt="">
+    <img id="icon" src="images/download__8_-removebg-preview (1).png" alt="">
+    <h1 id="texting">a</h1>
+     <div id="jn">
+        <img id="looking" src="images/search-icon-line-icon-icon-24.png" alt=""  style="width: 40px; height: 40px;">
+          <div id="jn2"> 
+            <b id="favour">Favourites</b>
+            <b id="favour" style="text-decoration: underline;text-decoration-color: rgb(231, 171, 6);">Offline</b>
+            <b id="favour">Playlists</b>
+          </div>
+     </div>
+     <div style="text-align: center;">
+        <b id="nn2"> 18</b> <b id="nn">free premium downloads remaining.</b> <b id="nn2">UPGRADE</b>
+     </div>
+     <input  type="range" name="" id="nn3">
+     <button id="audioall" >All</button>
+     <button id="audiolocal">Local </button>
+     <button id=""><h3> NOT ON DEVICE </h3> </button>
+
+
+
+    </div>
+    
+    </div>
+    <!-- <div id="caller">
+        <div id="upper2">
+            <p></p>
+        </div>
+        <div id="camera7">
+            <p></p>
+        </div>
+        <div id="simcard7">
+            <img src="images/SIM Card.png" alt="">
+        </div>
+        
+        <div id="card7">
+             <img src="images/SIM Card.png" alt="">
+        </div>
+        <div id="speaker7">
+            <p></p>
+        </div>
+    
+        <div id="flash7">
+            <p></p>
+        </div>
+    
+        <div id="innercamera7">
+            <p></p>
+        </div>
+        <div>
+            <marquee direction='left' style="color:white;
+            
+             font-size: 15px;margin-left: 10px;margin-top: 10px;">MTN NG STAY-SAFE </marquee>
+        </div>
+    
+   
+   
+
+    </div>
+     -->
+    </div>
+    </div>
+    
+</div>
+
+    <script src="locophone.js"></script>
+</body>
+</html>
